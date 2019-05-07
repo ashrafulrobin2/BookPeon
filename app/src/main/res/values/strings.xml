@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">BookPeon</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Other String -->
+    <string name="internet_error_msg">No network available!</string>
+    <string name="no_network_text">No Internet connection</string>
+    <string name="connect_network_text">Connect</string>
+    <string name="failed_text">Failed When Load Data</string>
+
+    <string name="txt_terms_condiion">Terms &amp; condition and Return &amp; Privicy</string>
+
+    <!-- Toast message -->
+    <string name="toast_could_not_retrieve_info">Could not retrieve info</string>
+    <string name="toast_network_error">You have no internet connection!\nPlease connect to internet.</string>
+    <string name="toast_no_info_found">No info found</string>
+    <string name="toast_loaded_offline_data">Loaded offline data</string>
+
+    <!--Registration-->
+    <string name="txt_reg">Register</string>
+    <string name="txt_reg_fname">Full Name</string>
+    <string name="txt_reg_country">Country</string>
+    <string name="txt_reg_email">Email</string>
+    <string name="txt_reg_password">Password</string>
+
+    <!--Login Page-->
+    <string name="txt_social_fb_sign_in">Sign in with Facebook</string>
+    <string name="txt_social_gmail_sign_in">Sign in with Gmail</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_sign_out">Sign Out</string>
+
+    <!--Reset Password-->
+    <string name="title_user_reset_pass">Reset Password</string>
+    <string name="title_user_current_pass">Current Password</string>
+    <string name="title_user_new_pass">New Password</string>
+    <string name="title_user_confirm_pass">Confirm Password</string>
+
+    <!-- View text -->
+    <string name="view_loading">Loading...</string>
+    <string name="view_category">Category</string>
+    <string name="view_sub_category">Sub Category</string>
+    <!--Account-->
+    <string name="txt_account_favourite">My Favourite Book</string>
+    <string name="txt_account_buy_history">Buy History</string>
+    <string name="txt_account_setting">Settings</string>
+    <string name="txt_account_logout">Logout</string>
+
+    <!--Payment-->
+    <string name="view_item_cost">Items Cost:</string>
+    <string name="view_subtotal">Subtotal</string>
+    <string name="view_zero_tk">0 Tk</string>
+    <string name="view_sixty_tk">60.00 Tk</string>
+    <string name="view_shipping_cost">Shipping cost</string>
+    <string name="view_total">Total</string>
+    <string name="view_add_to_cart">Add to Cart</string>
+
+    <!--Log Out Dialog String-->
+    <string name="dialog_logout_title">Log out</string>
+    <string name="dialog_logout_mgs">Thanks for Staying with us</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Stepper indicator -->
+    <string-array name="stepLabels">
+        <item>PRODUCTS</item>
+        <item>SHIPPING</item>
+        <item>CHECKOUT</item>
+        <item>COMPLETED</item>
+    </string-array>
+
+</resources>

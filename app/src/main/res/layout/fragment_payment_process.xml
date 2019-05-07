@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_setting"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_25"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <bookpeon.cutprice.com.view.LockableViewPager
+            android:id="@+id/vp_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stepper_indicator_checkout" />
+
+        <com.badoualy.stepperindicator.StepperIndicator
+            android:id="@+id/stepper_indicator_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            app:stpi_labelColor="@color/app_same_primary_color"
+            app:stpi_labelMarginTop="@dimen/dp_10"
+            app:stpi_labelSize="@dimen/sp_10"
+            app:stpi_labels="@array/stepLabels"
+            app:stpi_circleColor="@color/app_same_primary_color"
+            app:stpi_circleStrokeWidth="2dp"
+            app:stpi_circleRadius="10dp"
+            app:stpi_lineColor="@color/app_same_primary_color"
+            app:stpi_lineDoneColor="@color/app_same_primary_color"
+            app:stpi_indicatorColor="@color/app_same_primary_color"
+            app:stpi_lineStrokeWidth="1dp"
+            app:stpi_lineMargin="2dp"
+            app:stpi_indicatorRadius="2dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

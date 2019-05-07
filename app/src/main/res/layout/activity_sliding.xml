@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_sliding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jkb.slidemenu.SlideMenuLayout
+        android:id="@+id/mainSlideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:allowDragging="false"
+        app:contentAlpha="0.5"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="left"
+        >
+
+        <include layout="@layout/nav_header_main" />
+<!--
+        <include layout="@layout/nav_menu_view" />
+-->
+
+        <LinearLayout
+            android:id="@+id/fm_slide_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <include layout="@layout/app_bar_main" />
+        </LinearLayout>
+
+    </com.jkb.slidemenu.SlideMenuLayout>
+
+</RelativeLayout>

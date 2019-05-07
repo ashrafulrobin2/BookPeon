@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    style="@style/toolbar_base"
+    android:layout_marginBottom="@dimen/dp_2"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/app_primary_color"
+                android:layout_marginRight="@dimen/dp_40">
+
+                <requestFocus />
+
+            </EditText>
+<!--
+            <ImageButton
+                android:id="@+id/bt_clear"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_clear"
+                android:tint="@color/grey_5"
+                android:visibility="visible" />-->
+
+            <ImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/vector_ic_close_black" />
+
+        </RelativeLayout>
+
+
+   <!-- <TextView
+        android:id="@+id/txttoolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Search"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/small_font_size"
+        android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/vector_ic_close_black" />-->
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

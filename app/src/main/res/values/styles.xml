@@ -1,0 +1,152 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_primary_color</item>
+        <item name="colorPrimaryDark">@color/app_primary_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+-->
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+<!--
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+-->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/app_primary_color</item>
+        <item name="colorPrimaryDark">@color/app_primary_color</item>
+        <item name="colorAccent">@color/grey_800</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--<style name="AppTheme2" parent="AppBaseTheme">-->
+
+    <!--</style>-->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+    </style>
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+          <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+    </style>
+
+    <!--<style name="AnimationActivity" parent="@android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.Action" parent="Theme.AppCompat.Light.DarkActionBar" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+
+    </style>
+
+    <style name="toolbar_base">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/toolbar_bg</item>
+    </style>
+
+
+    <!-- RippleStyle-->
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+
+
+    <style name="NavigationViewStyle">
+        <item name="android:textColor">#afafaf</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">50dp</item><!-- menu item height-->
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <!--
+                <item name="android:textColor">?attr/colorPrimary</item>
+        -->
+        <item name="colorControlNormal">@color/colorWhite</item>
+
+        <item name="colorControlActivated">@color/colorWhite</item>
+
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="bnve">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bnve_primary_bg" parent="bnve">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+    <style name="bnve_white_bg" parent="bnve">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <!--RATING BAR STYLE -->
+    <!-- SMALL -->
+    <style name="RatingStar_Small" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/rating_stars_small</item>
+        <item name="android:indeterminateDrawable">@drawable/rating_stars_small</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <!-- MEDIUM -->
+    <style name="RatingStar_Medium" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/rating_stars_medium</item>
+        <item name="android:indeterminateDrawable">@drawable/rating_stars_medium</item>
+        <item name="android:minHeight">26dip</item>
+        <item name="android:maxHeight">26dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <!-- BIG -->
+    <style name="RatingStar_Big" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/rating_stars_big</item>
+        <item name="android:indeterminateDrawable">@drawable/rating_stars_big</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

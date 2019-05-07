@@ -1,0 +1,9 @@
+include ':app',
+        ':widget',
+        ':materialratingbar',
+        ':stepperindicator',
+        ':shopping',
+        ':slidemenu',
+        ':dropdownmenuplus',
+        ':segmentbutton',
+        ':pdialog'

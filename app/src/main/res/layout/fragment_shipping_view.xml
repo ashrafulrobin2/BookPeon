@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/htab_maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dip"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/lin_home_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="Buy A Book"
+                    android:textColor="@color/app_same_primary_color"
+                    android:textSize="@dimen/medium_font_size" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="1540 BDT"
+                    android:textColor="@color/app_same_primary_color"
+                    android:textSize="@dimen/sp_30"
+                    android:textStyle="bold"/>
+
+                <include
+                    layout="@layout/layout_calculation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_50"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_15">
+
+                    <LinearLayout
+                        android:id="@+id/lin_sliding_switch_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical">
+
+                        <co.ceryle.segmentedbutton.SegmentedButtonGroup
+                            android:id="@+id/sgb_payout_now"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:sbg_backgroundColor="@color/white"
+                            app:sbg_borderColor="@color/grey_300"
+                            app:sbg_borderSize=".9dp"
+                            app:sbg_position="0"
+                            app:sbg_radius="4dp"
+                            app:sbg_animateSelectorDuration="1000"
+                            app:sbg_rippleColor="@color/grey_500"
+                            app:sbg_selectorColor="@color/app_primary_color">
+
+                            <co.ceryle.segmentedbutton.SegmentedButton
+                                android:id="@+id/sb_pay_now"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="1"
+                                android:padding="4dp"
+                                app:sb_textStyle="bold"
+                                app:sb_text="PAY NOW"
+                                app:sb_textColor="@color/grey_800"
+                                app:sb_textColor_onSelection="@color/white"
+                                android:textStyle="bold"/>
+
+                            <co.ceryle.segmentedbutton.SegmentedButton
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="1"
+                                android:padding="4dp"
+                                app:sb_textStyle="bold"
+                                app:sb_text="CASH ON DELIVERY"
+                                app:sb_textColor="@color/grey_800"
+                                app:sb_textColor_onSelection="@color/white"
+                                android:textStyle="bold"/>
+
+                        </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_product_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_blue_button"
+                        android:text="PAY NOW"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/small_font_size"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

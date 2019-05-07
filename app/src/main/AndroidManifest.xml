@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bookpeon.cutprice.com">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <!--   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="bookpeon.cutprice.com.activity.SplashActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityNavHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityLoginInAndSignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivitySignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityDetails2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityDirectSell2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityCheckout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivitySetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivitySearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivitySearchList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name="bookpeon.cutprice.com.activity.ActivityWishList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+
+    </application>
+
+</manifest>
